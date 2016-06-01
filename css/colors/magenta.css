@@ -1,29 +1,29 @@
-/*Magenta #ec008c & #900f5c */
+/*Magenta #ec6a84 & #880e4f */
 
-.btn:focus, .btn-2, 
-ul.why li:before, 
-.progress .progress-bar, 
-.accordionMod .panel-heading .current, 
-#current:after, 
-.flat .plan li.plan-name, 
-.flat .plan.featured:hover li.plan-name, 
-#filters ul li a:hover h5, 
-#filters ul li a.active h5, 
+.btn:focus, .btn-2,
+ul.why li:before,
+.progress .progress-bar,
+.accordionMod .panel-heading .current,
+#current:after,
+.flat .plan li.plan-name,
+.flat .plan.featured:hover li.plan-name,
+#filters ul li a:hover h5,
+#filters ul li a.active h5,
 .cl-effect-21 a::before,
 .cl-effect-21 a::after,
 .cl-effect-21 .active a::before,
 .cl-effect-21 .active a::after,
 .post-date a.date i, .service-icon i  {
-    background: #ec008c;
+    background: #ec6a84;
 }
 
 .bg-color {
-    background: #ec008c;
+    background: #ec6a84;
 	color: #fff;
 }
 
 .subscribe-btn {
-	background: #ec008c;
+	background: #ec6a84;
 	cursor: pointer;
 }
 
@@ -32,57 +32,57 @@ div.content-box.big div.content-box-info p, .content-box-info h4 {
 }
 
 .about-wrap {
-    background: #ec008c no-repeat fixed center center;
+    background: #ec6a84 no-repeat fixed center center;
 }
 
 
-.subscribe-btn:focus, .subscribe-btn:hover, 
+.subscribe-btn:focus, .subscribe-btn:hover,
 .ch-item .ch-info-front {
-	background: #900f5c;
+	background: #880e4f;
 	color: white;
 }
 
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pager li > a:hover, .pager li > a:focus {
-    background-color: #ec008c;
+    background-color: #ec6a84;
     color: #fff;
 }
 
 
 .spinner {
-	border-top-color: #ec008c;
+	border-top-color: #ec6a84;
 }
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-	border-color: #ec008c;
+	border-color: #ec6a84;
 }
 
 .btn-2:hover, .btn-2:active, .btn-2 {
-	box-shadow: 0 4px #900f5c;
+	box-shadow: 0 4px #880e4f;
 }
 
 
 .author-content, #cn-tabs .service, .comment-des, .contact-box {
-	border-bottom-color:#ec008c;
+	border-bottom-color:#ec6a84;
 }
 
-a, a:hover, a:focus, 
-.flat .plan li > strong, 
-#slider_left i:hover, 
-#slider_right i:hover, 
-.text-color, 
+a, a:hover, a:focus,
+.flat .plan li > strong,
+#slider_left i:hover,
+#slider_right i:hover,
+.text-color,
 .cl-effect-21 a:hover,
 .cl-effect-21 a:focus,
 .cl-effect-21 .active a,
 .cl-effect-21 .active a:focus,
-.navbar-nav > li > a:hover, 
-.navbar-nav > li > a:focus, 
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
 .navbar-nav > li.active > a,
 .post-date a.date strong,
-.pagination > li > a, 
+.pagination > li > a,
 .pagination > li > span,
 .fun,
 .btn-1:hover,
 .btn-1:active {
-    color: #ec008c;
+    color: #ec6a84;
 }
