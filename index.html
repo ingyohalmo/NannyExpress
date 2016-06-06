@@ -117,15 +117,7 @@
                                                                   <li><a href="#section3">Buscar Niñera</a></li>
                                                                   <li><a href="#section4">Servicios</a></li>
                                                                   <li><a href="#section5">Clientes</a></li>
-                                                                  <li><a href="#section6">Precios</a></li>
-                                                                  <li class="dropdown nav-toggle">
-                                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
-                                                                        <ul class="dropdown-menu">
-                                                                              <li><a class="external" href="blog.html">Blog</a></li>
-                                                                              <li><a class="external" href="blog-big.html">Blog Large</a></li>
-                                                                              <li><a class="external" href="single-post.html">Single Page</a></li>
-                                                                        </ul>
-                                                                  </li>
+                                                                  <li><a href="#section6">Precios</a></li>                                                       </li>
                                                                   <li><a href="#section7">Contacto</a></li>
                                                             </ul>
                                                       </div>
@@ -945,7 +937,7 @@
                                                             <span id="response"></span>
 
                                                             <input class="form-control subEmail wow fadeInLeft" type="text" placeholder="Correo Electronico" id="subEmail" name="subEmail">
-                                                            <button class="btn btn-1 wow fadeInRight">Unirme</button>
+                                                            <button class="btn btn-1 wow fadeInRight" onclick="mensaje()">Unirme</button>
 
                                                             <div id="no-spam" class="wow fadeInUp">*Nunca mandaremos spam ni usaremos esta informacion para terceros</div>
                                                       </fieldset>
@@ -953,6 +945,13 @@
                                           </div>
 
                                           <div class="col-md-2"></div>
+                                          
+                                          <script>
+                                                function mensaje(){
+                                                      alert("Gracias por Suscribirte!");
+                                                }
+                                          </script>
+                                          
                                     </div>
                                     <!-- /Subscription form -->
                               </div>
@@ -1009,9 +1008,14 @@
                                                       </div>
                                                       <div class="row">
                                                             <div class="col-md-12 wow fadeInUp">
-                                                                  <button type="submit" class="btn btn-2 btn-2c">Enviar</button>
-                                                                  <div class="success alert-success alert" style="display:none">Tu mensaje ha sido enviado exitosamente.</div>
-                                                                  <div class="error alert-danger alert" style="display:none">El correo debe ser valido.</div>
+                                                                  <button type="submit" class="btn btn-2 btn-2c" onclick="enviar()" >Enviar</button>
+                                                                  <script>
+                                                                        function enviar(){
+                                                                              window.location.href = "index.html";
+                                                                              alert("Gracias por Escribirnos!");
+                                                                        }
+                                                                  </script>
+                                                                  
                                                             </div>
                                                       </div>
                                                 </fieldset>
@@ -1037,8 +1041,8 @@
                   <footer class="footer-wrap text-center">
                         <div class="container">
                               <ul class="social social-icons-footer-bottom wow fadeInDown">
-                                    <li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></li>
+                                    <li class="facebook"><a href="http://www.facebook.com" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="http://www.twitter.com" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></li>
                               </ul>
 
                               <p class="site-info wow fadeInUp"> © 2016 NannyExpress</p>
