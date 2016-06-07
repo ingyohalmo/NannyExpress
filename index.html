@@ -30,7 +30,7 @@
 
 
       <!-- Favicons -->
-      <link rel="shortcut icon" href="img/ico/favicon.ico">
+      <link rel="shortcut icon" href="img/ico/apple-touch-icon.png">
       <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">
       <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114.png">
@@ -118,14 +118,6 @@
                                                                   <li><a href="#section4">Servicios</a></li>
                                                                   <li><a href="#section5">Clientes</a></li>
                                                                   <li><a href="#section6">Precios</a></li>
-                                                                  <li class="dropdown nav-toggle">
-                                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
-                                                                        <ul class="dropdown-menu">
-                                                                              <li><a class="external" href="blog.html">Blog</a></li>
-                                                                              <li><a class="external" href="blog-big.html">Blog Large</a></li>
-                                                                              <li><a class="external" href="single-post.html">Single Page</a></li>
-                                                                        </ul>
-                                                                  </li>
                                                                   <li><a href="#section7">Contacto</a></li>
                                                             </ul>
                                                       </div>
@@ -160,21 +152,20 @@
                               <div class="col-md-8">
                                     <br>
                                     <div class="col-md-12 sub-title text-center wow slideInRight">
+                                                
+                                          <blockquote class="blockquote-reverse">
                                           <p><u> <strong><h2>Misión</h2></u></strong></p>
-                                          <h4 style="color:#ec6a84;">Nanny Express es un servicio de niñeras que ofrece seguridad y confianza en cuanto al cuidado de los niños, para que  las madres puedan mantener  un excelente balance entre su vida profesional y personal.</h4>      
+                                          <p><h3 style="color:#ec6a84;">Nanny Express es un servicio de niñeras que ofrece seguridad y confianza en cuanto al cuidado de los niños, para que  las madres puedan mantener  un excelente balance entre su vida profesional y personal.</h3></p>
+                                          </blockquote>
                                     </div>
                                     <br>
                                     <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <p><u><strong><h2>Visión</h2></u></strong></p>
-                                          <h4 style="color:#ec6a84;">Ser una empresa reconocida y diferenciada de las demás gracias a su calidad, servicio, confianza y disponibilidad de nuestro personal capacitado.</h4>      
+                                          <blockquote class="blockquote-reverse">
+                                          <p><u> <strong><h2>Visión</h2></u></strong></p>
+                                          <p><h3 style="color:#ec6a84;">Ser una empresa reconocida y diferenciada de las demás gracias a su calidad, servicio, confianza y disponibilidad de nuestro personal capacitado.</h3></p>
+                                          </blockquote>
                                     </div>
-                                    <br>
-                                    <div class="col-md-12 sub-title text-center wow slideInRight">
-                                          <p><u><strong><h2>Objetivo</h2></u></strong></p>
-                                          <h4 style="color:#ec6a84;">Ofrecer un servicio especializado de niñeras a las madres salvadoreñas  mientras se encuentren cubriendo actividades imprevistas.</h4>            
-                                    </div>
-                                    <br>
-                                    
+                                    <br>                                    
                               </div>
                         </div>
 
@@ -337,7 +328,7 @@
                               </div>
                               <!-- /Title row -->
                               <div class="col-md-12 sub-title text-center wow slideInRight">
-                                    <h3 style="color:#ec6a84;">Nanny Express ha sido creado para todas aquellas madres (o familias) salvadoreñas que por algún motivo no tienen un personal fijo para cuidar a sus niños. Con este servicio pretendemos que las madres puedan sentirse en confianza dejando a sus hijos a cargo con una niñera temporal o una institutriz mientras tengan que cumplir con alguna actividad imprevista de índole laboral o familiar.</h3>
+                                    <h3 style="color:#ec6a84;"><blockquote>Nanny Express ha sido creado para todas aquellas madres (o familias) salvadoreñas que por algún motivo no tienen un personal fijo para cuidar a sus niños. Con este servicio pretendemos que las madres puedan sentirse en confianza dejando a sus hijos a cargo con una niñera temporal o una institutriz mientras tengan que cumplir con alguna actividad imprevista de índole laboral o familiar.</blockquote></h3>
                               </div>
                         </div>
                   </div>
@@ -930,7 +921,7 @@
                                     <!-- Title row -->
                                     <div class="row">
                                           <div class="col-md-12 big-title light wow bounceIn">
-                                                <h2>Suscribete con Nosotros</h2>
+                                                <h2>Suscribete a Nuestro Blog</h2>
                                           </div>
                                     </div>
                                     <!-- /Title row -->
@@ -945,7 +936,7 @@
                                                             <span id="response"></span>
 
                                                             <input class="form-control subEmail wow fadeInLeft" type="text" placeholder="Correo Electronico" id="subEmail" name="subEmail">
-                                                            <button class="btn btn-1 wow fadeInRight">Unirme</button>
+                                                            <button class="btn btn-1 wow fadeInRight" onclick="mensaje()">Unirme</button>
 
                                                             <div id="no-spam" class="wow fadeInUp">*Nunca mandaremos spam ni usaremos esta informacion para terceros</div>
                                                       </fieldset>
@@ -953,6 +944,14 @@
                                           </div>
 
                                           <div class="col-md-2"></div>
+                                          
+                                          <script>
+                                                function mensaje(){
+                                                      alert("Bienvenido a Nuestro Blog!");
+                                                      window.open("blog.html");
+                                                }
+                                          </script>
+                                          
                                     </div>
                                     <!-- /Subscription form -->
                               </div>
@@ -1009,9 +1008,14 @@
                                                       </div>
                                                       <div class="row">
                                                             <div class="col-md-12 wow fadeInUp">
-                                                                  <button type="submit" class="btn btn-2 btn-2c">Enviar</button>
-                                                                  <div class="success alert-success alert" style="display:none">Tu mensaje ha sido enviado exitosamente.</div>
-                                                                  <div class="error alert-danger alert" style="display:none">El correo debe ser valido.</div>
+                                                                  <button type="submit" class="btn btn-2 btn-2c" onclick="enviar()" >Enviar</button>
+                                                                  <script>
+                                                                        function enviar(){
+                                                                              window.location.href = "index.html";
+                                                                              alert("Gracias por Escribirnos!");
+                                                                        }
+                                                                  </script>
+                                                                  
                                                             </div>
                                                       </div>
                                                 </fieldset>
@@ -1037,8 +1041,8 @@
                   <footer class="footer-wrap text-center">
                         <div class="container">
                               <ul class="social social-icons-footer-bottom wow fadeInDown">
-                                    <li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></li>
+                                    <li class="facebook"><a href="http://www.facebook.com" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="http://www.twitter.com" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></li>
                               </ul>
 
                               <p class="site-info wow fadeInUp"> © 2016 NannyExpress</p>
