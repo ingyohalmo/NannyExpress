@@ -1216,13 +1216,14 @@ div.content-box.big div.content-box-info p {
     
     .portfolio-item {
         padding: 0;
-        position: relative;
+        position: absolute;
         overflow: hidden;
+
     }
 
 .portfolio-item .img-holder {
     display:block;
-    overflow:hidden;
+      margin: 1%;
     position: relative;
 }
 
@@ -1366,7 +1367,7 @@ div.content-box.big div.content-box-info p {
 }
 
 .accordion-body,.panel-heading {
-    background: #fff;
+    background: #fff555;
     border-radius: 0;
     padding: 0;
 }
