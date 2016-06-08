@@ -286,8 +286,8 @@ Drop Down Menu Fade Effect
         
     //Google map
     jQuery('#maps').gMap({
-        address: "Torre Avante, San Salvador, El Salvador",
-        zoom: 16,
+        address: "Calle El Mirador, San Salvador, El Salvador",
+        zoom: 18,
         controls: {
          panControl: true,
          zoomControl: true,
@@ -297,8 +297,8 @@ Drop Down Menu Fade Effect
          overviewMapControl: true
      },
         markers: [{
-            latitude: 23.835369,
-            longitude: 90.367172,
+            latitude: 13.709722,
+            longitude: -89.2455537,
             html: "<h4>NanyExpress</h4>",
             popup: true
         }]
