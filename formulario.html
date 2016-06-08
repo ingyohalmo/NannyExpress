@@ -124,7 +124,7 @@
 
 
                 <div class="panel-body">
-                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                    <form role="form" id="payment-form" method="POST" action="index.html">
 
                         <div class="row display-tr" >
                         <h3 class="panel-title display-td" style="font-size:200%; color:#ec6a84;">Datos de los padres</h3>
@@ -336,12 +336,13 @@
                             <div class="col-xs-5 col-md-5 pull-right">
                                 <div class="form-group" >
                                     <label for="cardCVC">Horas de servicio</label>
-                                    <select style="color:black;">
-                                  <option value="volvo">1</option>
-                                  <option value="saab">2</option>
-                                  <option value="mercedes">3</option>
-                                  <option value="audi">4</option>
-                                  <option value="audi">5</option>
+                                    <select style="color:black;" id="horas" onchange="Ejecutar(this)">
+                                  <option value="0">-----</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
 </select> 
                                 </div>
                             </div>
@@ -371,7 +372,7 @@
                             <div class="col-xs-5 col-md-5 pull-right">
                                 <div class="form-group" >
                                     <label for="cardCVC">Tipo de servicio</label>
-                                    <select style="color:black;" id="states"  OnChange="change_city()">
+                                    <select style="color:black;" id="states"  OnChange="change_city(); Ejecutar(this); ">
                                       <option value="2" selected="selected">--Tipo de servicio--</option>
                                   <option value="0">Institutriz</option>
                                   <option value="1">Niñera</option>
@@ -410,12 +411,12 @@ for(var i=0;i<states.options.length;i++)
 
                                      <label for="cardCVC">Nombre institutriz o niñera</label>
 
-                                    <select  id="cities_2" style="display: inline; color:black;">
+                                    <select  id="cities_2" style="display: inline; color:black; width:100%;">
                                        <option value="...">Seleccione un tipo de servicio</option>
                                        
                                     </select>
                                 
-                                    <select id="cities_0" style="display: none; color:black;">
+                                    <select id="cities_0" style="display: none; color:black; width:100%;">
                                       <option value="...">Minerva De la Cruz</option>
                                        <option value="...">Blanca Roxana Muñoz de León</option>
                                        <option value="...">Karla Michelle Muñoz Arévalo</option>
@@ -425,7 +426,7 @@ for(var i=0;i<states.options.length;i++)
 
                                     </select>
 
-                                    <select id="cities_1" style="display: none; color:black;">
+                                    <select id="cities_1" style="display: none; color:black; width:100%;">
                                         <option value="...">Flor de María</option>
                                        <option value="...">Ana María Gonzáles Hernández</option>
                                       <option value="...">Marcela Valentina Cáceres Romero</option>
@@ -442,9 +443,124 @@ for(var i=0;i<states.options.length;i++)
       </div>
 
 
+<br>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row">
+                          <div class="col-xs-7 col-md-7" >
+
+                              <div class="form-group" style="width:30%;">
+                                   <label for="cardExpiry"><span class="hidden-xs"><HEAD>Total a pagar </HEAD></span><span class="visible-xs-inline"></span> </label>
+
+
+                                     <label  id="total" for="cardExpiry" style="color:#ec6a84; font-size:200%; "><span class="hidden-xs" ><HEAD>$</HEAD></span><span class="visible-xs-inline"></span> </label>
+
+                                </div>
+                                </div>
+                                </div>
+
 
                         
                         <br>
+
+
+
+
+<script type="text/javascript">
+function Ejecutar(form)
+{
+var sOpcion = parseInt(document.getElementById('horas').value);
+var total_venta;
+var Precio = 0;
+
+
+
+var states=document.getElementById('states'),whichstate;
+
+whichstate=states.options[states.selectedIndex].value;
+
+if (whichstate==1) {
+
+switch(sOpcion){
+
+  case 1:  
+  Precio = 10;
+   break;
+
+   case 2:  
+  Precio = 20;
+   break;
+
+   case 3:  
+  Precio = 25;
+   break;
+
+   case 4:  
+  Precio = 35;
+   break;
+
+   case 5:  
+  Precio = 40;
+   break;
+
+}
+
+}
+
+
+
+else { 
+
+
+  if (whichstate==0)
+    { 
+
+      switch(sOpcion){
+
+  case 1:  
+  Precio = 15;
+   break;
+
+   case 2:  
+  Precio = 25;
+   break;
+
+   case 3:  
+  Precio = 35;
+   break;
+
+   case 4:  
+  Precio = 45;
+   break;
+
+   case 5:  
+  Precio = 55;
+   break;
+
+}
+
+}
+
+
+}
+
+
+total_venta = Precio;
+document.getElementById('total').innerHTML ="$" + total_venta.toString();
+
+}
+
+
+</script>
 
 
   <br>  <br>
@@ -508,7 +624,7 @@ for(var i=0;i<states.options.length;i++)
                         
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="subscribe btn btn-success btn-lg btn-block" type="button">Aceptar</button>
+                                <input class="subscribe btn btn-success btn-lg btn-block"  type="submit">
                             </div>
                         </div>
                         <div class="row" style="display:none;">
@@ -516,10 +632,20 @@ for(var i=0;i<states.options.length;i++)
                                 <p class="payment-errors"></p>
                             </div>
                         </div>
+
+
+
+
                     </form>
                 </div>
             </div>            
             <!-- CREDIT CARD FORM ENDS HERE -->
+
+            <script>
+function myFunction() {
+    alert("Su solicitud se ha completado exitosamente");
+}
+</script>
             
             
         </div>            
@@ -527,6 +653,7 @@ for(var i=0;i<states.options.length;i++)
                 
     </div>
 </div>
+
 
 
 
